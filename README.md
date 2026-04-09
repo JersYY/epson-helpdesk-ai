@@ -63,7 +63,6 @@ epson-helpdesk-ai/
 │   └── web/
 │       ├── src/
 │       ├── .env
-│       └── .env.example
 ├── database/
 │   └── init.sql
 ├── docs/
