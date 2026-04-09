@@ -52,10 +52,6 @@ CREATE INDEX IF NOT EXISTS idx_knowledge_chunks_searchable
   ON knowledge_chunks
   USING GIN (searchable);
 
--- Default embedding Gemini yang dipakai di MVP ini berdimensi 3072.
--- Index ANN HNSW di pgvector tidak mendukung dimensi setinggi ini,
--- jadi untuk seed awal kita mengandalkan text search dan vector scan biasa.
-
 CREATE TABLE IF NOT EXISTS conversations (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   employee_id UUID NOT NULL REFERENCES employees(id) ON DELETE CASCADE,
