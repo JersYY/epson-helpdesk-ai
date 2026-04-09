@@ -232,16 +232,8 @@ Yang bisa dikembangkan lagi:
 - evaluasi relevance retrieval yang lebih kuat
 - integrasi ke jaringan internal Epson
 
-## Catatan Keamanan
-
-- jangan commit API key production ke repository publik
-- untuk keamanan, rotate API key Gemini setelah testing bila key pernah dibagikan di chat
-- untuk deployment internal, ubah `JWT_SECRET` ke nilai yang lebih kuat
 
 ## Dokumentasi Tambahan
 
 - Arsitektur: [docs/architecture.md](/home/jersyy/capstone/epson/epson-helpdesk-ai/docs/architecture.md)
 
-## Ringkasan
-
-Project ini sudah siap dipakai sebagai MVP helpdesk chatbot AI internal PT EPSON untuk demo, pengembangan lanjutan, dan presentasi capstone.
