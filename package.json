@@ -1,0 +1,19 @@
+{
+  "name": "epson-helpdesk-ai",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/api",
+    "apps/web"
+  ],
+  "scripts": {
+    "dev:api": "npm run dev -w apps/api",
+    "dev:web": "npm run dev -w apps/web",
+    "dev:services:up": "docker compose up -d",
+    "dev:services:down": "docker compose down",
+    "build": "npm run build -ws",
+    "lint": "npm run lint -ws",
+    "seed:kb": "npm run seed:kb -w apps/api",
+    "seed:demo": "npm run seed:demo -w apps/api"
+  }
+}
